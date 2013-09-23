@@ -1,7 +1,9 @@
-.section-title {
-  padding: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
+.section-top {
+  padding: 30px 30px 30px 30px;
+}
+
+.section {
+  padding: 15px 30px 15px 30px;
 }
 
 .title {
@@ -14,4 +16,8 @@
   margin: 10px 0 20px 0; 
   font-size: 18px;
   font-weight: 700;
+}
+
+.navbar-div {
+  margin-left: 15px;
 }
