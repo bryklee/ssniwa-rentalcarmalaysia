@@ -21,3 +21,13 @@
 .navbar-div {
   margin-left: 15px;
 }
+
+.section-steps {
+  padding: 15px 30px 15px 30px;
+  margin: 0 30px 0 30px;
+}
+
+.introjs-helperNumberLayer {
+  width: 30px;
+  height: 30px;
+}
