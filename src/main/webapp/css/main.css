@@ -1,9 +1,21 @@
 .section-top {
-  padding: 30px 30px 30px 30px;
+  padding: 2px 5px 2px 5px;
+  margin: 20px 15px 0 15px;
 }
 
 .section {
-  padding: 15px 30px 15px 30px;
+  padding: 2px 5px 5px 5px;
+  margin: 0 15px 0 15px;
+}
+
+.section-steps {
+  padding: 2px 5px 2px 5px;
+  margin: 0 15px 0 15px;
+}
+
+.section-rules {
+  padding: 2px 5px 2px 5px;
+  margin: 20px 25px 0 25px;
 }
 
 .title {
@@ -18,16 +30,41 @@
   font-weight: 700;
 }
 
+.navbar-div-container {
+  margin-left: -8px;
+}
+
 .navbar-div {
   margin-left: 15px;
 }
 
-.section-steps {
-  padding: 15px 30px 15px 30px;
-  margin: 0 30px 0 30px;
+.steps-div {
+  style="padding-left: 10px;"
 }
 
 .introjs-helperNumberLayer {
   width: 30px;
   height: 30px;
 }
+
+.rules-div {
+  padding: 2px 0 20px 0;
+}
+
+.rules-insurance-table {
+  max-width: 300px;
+}
+
+.rules-insurance-table-div {
+  position: relative;
+  margin: 15px 0;
+  padding: 25px 19px 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  max-width: 320px;
+}
+
+#scroll_to_top{width: 112px; height: 111px; position: fixed; right: 0px; bottom: 0px; display: none; cursor: pointer;}
