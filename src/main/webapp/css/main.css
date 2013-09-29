@@ -76,3 +76,47 @@
   display: none; 
   cursor: pointer;
 }
+
+.map-div {
+  max-width: 580px;
+  height: 350px;
+  margin: 0px auto;
+  position: relative;
+  background-color: rgb(229, 227, 223);
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+.contact-section-top {
+  padding: 0 10px;
+}
+
+.contact-section-div {
+  padding: 0 20px;
+}
+
+.contact-section-col {
+  padding: 2px 5px;
+  margin: 0 15px;
+}
+
+.contact-form-div {
+  padding: 0 0 20px 0;
+}
+
+.contact-input-div {
+  max-width: 330px;
+}
+
+.contact-input {
+  width: 100%;
+}
+
+.contact-error-msg {
+  color: #b94a48;
+  font-size: 12px;
+}
+
+.send-msg-div {
+  padding: 20px 0 0 0;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rental Car Malaysia - Contact Us</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container navbar-div-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-div">
+            <a class="navbar-brand" href="/home.html">
+              <img src="/img/rentalcarmalaysia-logo.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div style="margin-left: 15px;">
+            <ul class="nav navbar-nav">
+              <li><a href="/home.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Rental Car List</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Transportation</a></li>
+                  <li><a href="#">Tour Package</a></li>
+                </ul>
+              </li>
+              <li><a href="/procedure.html">Procedure</a></li>
+              <li><a href="/rules.html">Rules</a></li>
+              <li class="active"><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid contact-section-top">
+        <div class="span12">
+          <div class="section-top">
+            <div class="title">
+              Get In Touch With Us
+            </div>
+            <div>
+              <p>
+                We’d love to hear from you!
+              </p> 
+              <p>
+                Trying hard to get the information you are looking for? 
+                Having any doubts or comments, or just simply a suggestion? 
+                Please write us via the form underneath and speak up!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="container-fluid">
+      <div class="row-fluid contact-section-div">
+        <div class="span4">
+          <div class="contact-section-col">
+            <div class="container-col-title">Send us a message</div>
+            <div class="contact-form-div">
+              <form id="contactForm" method="post" class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" for="contactName">Name(*)</label>
+                  <div class="controls contact-input-div">
+                    <input type="text" id="contactName" name="contactName" class="contact-input" required />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="contactEmail">Email(*)</label>
+                  <div class="controls contact-input-div">
+                    <input type="text" id="contactEmail" name="contactEmail" class="contact-input" required />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="contactPhone">Phone</label>
+                  <div class="controls contact-input-div">
+                    <input type="text" id="contactPhone" name="contactPhone" class="contact-input" />
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="contactMessage">Message(*)</label>
+                  <div class="controls contact-input-div">
+                    <textarea rows="5" id="contactMessage" name="contactMessage" class="contact-input" required></textarea>
+                  </div>
+                </div>
+                <div class="control-group send-msg-div">
+                  <div class="controls">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="contact-section-col">
+            <div class="container-col-title">Contact us</div>
+            <address>
+              <strong>SSNiwa Sdn Bhd</strong><br/>
+              No 98-2, Jalan Cengal Selatan,<br/>
+              Gombak Court, 53300,<br/>
+              Setapak, Kuala Lumpur<br/>
+              <abbr title="Office">O:</abbr> <strong>(60) 3-40320506</strong><br/>
+              <abbr title="Mobile">M:</abbr> <strong>(60) 14-9029687</strong><br/>
+              <abbr title="Email">E:</abbr> <a href="mailto:ssniwa@gmail.com">ssniwa@gmail.com</a><br/>
+            </address>
+          </div>
+        </div>
+        <div class="span5">
+          <div class="contact-section-col">
+            <div class="container-col-title">Locate us</div>
+            <div id="map-canvas" class="map-div"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="section">
+      <footer>
+        <p>Copyright © 2013 Rental Car Malaysia. All rights reserved.</p>
+      </footer>
+    </div>
+    <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>   
+    <script src="/js/main.js"></script>
+  </body>
+  <script type="text/javascript">
+    function initialize() {
+      var latlng = new google.maps.LatLng(3.206401,101.709017);
+      var mapOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+      var marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+      });
+      google.maps.event.trigger(map, 'resize');
+    }
+    
+    function loadScript() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyA_Mr75O-KkL3lK7H85ylSk18bkJ8hdUtY&sensor=false&callback=initialize";
+      document.body.appendChild(script);
+    }
+    
+    jQuery(document).ready(function(){
+      loadScript();
+      
+      jQuery("#contactForm").validate({
+        rules: {
+          contactPhone: {
+            digits: true
+          },
+          contactEmail: {
+            required: true,
+            email: true
+          }
+        },
+        errorClass: "contact-error-msg",
+        submitHandler: function(form) {
+          jQuery.ajax({
+            url: "/contactus", 
+            type: "POST",
+            data: jQuery('#contactForm').serialize(),
+            success: function(msg){
+              alert( "Data Saved: " + msg );
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+              //alert("some error");
+            }
+          });
+        }
+      });
+    });
+  </script>
+</html>
