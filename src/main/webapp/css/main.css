@@ -39,7 +39,7 @@
 }
 
 .steps-div {
-  style="padding-left: 10px;"
+  padding-left: 10px;
 }
 
 .introjs-helperNumberLayer {
@@ -67,4 +67,12 @@
   max-width: 320px;
 }
 
-#scroll_to_top{width: 112px; height: 111px; position: fixed; right: 0px; bottom: 0px; display: none; cursor: pointer;}
+#scroll-to-top {
+  width: 112px; 
+  height: 111px; 
+  position: fixed; 
+  right: 0px; 
+  bottom: 0px; 
+  display: none; 
+  cursor: pointer;
+}
