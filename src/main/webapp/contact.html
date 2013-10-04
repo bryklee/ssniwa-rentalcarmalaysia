@@ -87,7 +87,7 @@
               </div>
               <div class="control-group">
                 <div class="controls">
-                  <button id="backBtn" type="button" class="btn btn-primary" onclick="window.location.reload();">Back</button>
+                  <button id="backBtn" type="button" class="btn btn-primary">Back</button>
                 </div>
               </div>
             </div>
@@ -370,6 +370,10 @@
             }
           });
         }
+      });
+      
+      jQuery("#backBtn").click(function(){
+        window.location = "/contact.html";
       });
       
       loadMapScript();
