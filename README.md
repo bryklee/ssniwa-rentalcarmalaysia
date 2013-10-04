@@ -1,5 +1,3 @@
 # SSNIWA rentalcarmalaysia webapp
 
-Webapp for SSNIWA rentalcarmalaysia
-
-
+Webapp for SSNIWA rentalcarmalaysia site
