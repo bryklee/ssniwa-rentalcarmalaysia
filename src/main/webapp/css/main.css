@@ -120,3 +120,19 @@
 .send-msg-div {
   padding: 20px 0 0 0;
 }
+
+.confirm-div {
+  padding: 20px 0 0 0;
+}
+
+.contact-captcha-widget {
+  padding: 20px 0 0 0;
+}
+
+.sent-result-msg {
+  padding-bottom: 20px;
+}
+
+.sent-result-err-msg {
+  color: #b94a48;
+}

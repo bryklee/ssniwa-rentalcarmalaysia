@@ -11,6 +11,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/recaptcha.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="/js/html5shiv.js"></script>
@@ -80,16 +81,26 @@
         <div class="span4">
           <div class="contact-section-col">
             <div class="container-col-title">Send us a message</div>
+            <div class="sent-result-div" style="display: none;">
+              <div class="sent-result-msg">
+                <p></p>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <button id="backBtn" type="button" class="btn btn-primary" onclick="location.reload()">Back</button>
+                </div>
+              </div>
+            </div>
             <div class="contact-form-div">
               <form id="contactForm" method="post" class="form-horizontal">
                 <div class="control-group">
-                  <label class="control-label" for="contactName">Name(*)</label>
+                  <label class="control-label" for="contactName">Name*</label>
                   <div class="controls contact-input-div">
                     <input type="text" id="contactName" name="contactName" class="contact-input" required />
                   </div>
                 </div>
                 <div class="control-group">
-                  <label class="control-label" for="contactEmail">Email(*)</label>
+                  <label class="control-label" for="contactEmail">Email*</label>
                   <div class="controls contact-input-div">
                     <input type="text" id="contactEmail" name="contactEmail" class="contact-input" required />
                   </div>
@@ -101,17 +112,76 @@
                   </div>
                 </div>
                 <div class="control-group">
-                  <label class="control-label" for="contactMessage">Message(*)</label>
+                  <label class="control-label" for="contactMessage">Message*</label>
                   <div class="controls contact-input-div">
-                    <textarea rows="5" id="contactMessage" name="contactMessage" class="contact-input" required></textarea>
-                  </div>
-                </div>
-                <div class="control-group send-msg-div">
-                  <div class="controls">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <textarea rows="3" id="contactMessage" name="contactMessage" class="contact-input" required></textarea>
                   </div>
                 </div>
               </form>
+              <div class="contact-captcha-widget" style="display:none;">
+                <div style="padding-bottom: 10px;">
+                  <p>
+                    For security purpose, please solve the following captcha:
+                  </p>
+                </div>
+                <div id="recaptcha_widget" style="display:none" class="recaptcha_widget">
+                  <div id="recaptcha_image"></div>
+                  <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect. Please try again.</div>
+                  <div class="recaptcha_input">
+                    <label class="recaptcha_only_if_image" for="recaptcha_response_field">Enter the words above:</label>
+                    <label class="recaptcha_only_if_audio" for="recaptcha_response_field">Enter the numbers you hear:</label>
+                    <input type="text" id="recaptcha_response_field" name="recaptcha_response_field">
+                  </div>            
+                  <ul class="recaptcha_options">
+                    <li>
+                      <a href="javascript:Recaptcha.reload()" title="Get another captcha">
+                        <i class="icon-refresh">
+                          <img id="recaptcha_reload" width="25" height="17" src="/img/refresh.png" alt="Get another captcha" />
+                        </i>
+                        <span class="captcha_hide">Get another captcha</span>
+                      </a>
+                    </li>
+                    <li class="recaptcha_only_if_image">
+                      <a href="javascript:Recaptcha.switch_type('audio')" title="Get an audio captcha">
+                        <i class="icon-volume-up">
+                          <img id="recaptcha_switch_audio" width="25" height="16" alt="Get an audio captcha" src="/img/audio.png">
+                        </i>
+                        <span class="captcha_hide">Get an audio captcha</span>
+                      </a>
+                    </li>
+                    <li class="recaptcha_only_if_audio">
+                      <a href="javascript:Recaptcha.switch_type('image')" title="Get an image captcha">
+                        <i class="icon-picture">
+                          <img id="recaptcha_switch_img" width="25" height="16" alt="Get an image captcha" src="/img/text.png">
+                        </i>
+                        <span class="captcha_hide">Get an image captcha</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:Recaptcha.showhelp()" title="Help">
+                        <i class="icon-question-sign">
+                          <img id="recaptcha_whatsthis" width="25" height="16" src="/img/help.png" alt="Help">
+                        </i>
+                        <span class="captcha_hide">Help</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <label for="recaptcha_widget" class="contact-error-msg send-err-msg" style="display:none;"></label>
+              <div class="control-group send-msg-div">
+                <div class="controls">
+                  <button id="continueBtn" type="button" class="btn btn-primary">Continue</button>
+                </div>
+              </div>
+              <div class="control-group confirm-div" style="display:none;">
+                <div class="controls">
+                  <span style="padding: 0 10px 10px 0;">
+                    <button id="confirmBtn" type="button" class="btn btn-primary">Confirm</button>
+                  </span>
+                  <button id="cancelBtn" type="button" class="btn btn-primary">Cancel</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -144,13 +214,15 @@
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.validate.min.js"></script>   
-    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
   </body>
   <script type="text/javascript">
-    function initialize() {
+    function initializeMap() {
       var latlng = new google.maps.LatLng(3.206401,101.709017);
       var mapOptions = {
         zoom: 15,
@@ -165,16 +237,58 @@
       google.maps.event.trigger(map, 'resize');
     }
     
-    function loadScript() {
+    function loadMapScript() {
       var script = document.createElement("script");
       script.type = "text/javascript";
-      script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyA_Mr75O-KkL3lK7H85ylSk18bkJ8hdUtY&sensor=false&callback=initialize";
+      script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyA_Mr75O-KkL3lK7H85ylSk18bkJ8hdUtY&sensor=false&callback=initializeMap";
       document.body.appendChild(script);
     }
     
+    function showCaptcha(){
+      Recaptcha.create("6LdXKugSAAAAACKC49wPP1hDSSkPCGvG7_L-f4u4", "recaptcha_widget", {
+                      theme : 'custom',
+                      callback: Recaptcha.focus_response_field});
+    }
+    
+    function disableEnableContactForm(enable) {
+      jQuery(".contact-input").each(function(){
+        if( enable ) {
+          jQuery(this).removeAttr("disabled");
+        }
+        else {
+          jQuery(this).attr("disabled", "disabled");
+        }
+      });
+    }
+    
+    function prePostAction() {
+      jQuery("#confirmBtn").attr("disabled", "disabled");
+      jQuery("#cancelBtn").hide();
+      jQuery.blockUI({ message: '<img src="/img/spinner.gif" /><br/><p>Please wait</p>' });
+    }
+    
+    function postPostAction(validated, result, msg) {
+      if( validated ) {
+        if( result ) {
+          jQuery("div.sent-result-msg p").html(msg).parent().removeClass("sent-result-err-msg");
+          jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+        }
+        else {
+          jQuery("div.sent-result-msg p").html(msg).parent().addClass("sent-result-err-msg");
+        }
+        jQuery(".sent-result-div").show();
+        jQuery(".contact-form-div").remove();
+      }
+      else {
+        jQuery(".send-err-msg").html(msg).show();
+        jQuery("#recaptcha_response_field").focus();
+        jQuery("#confirmBtn").removeAttr("disabled");
+        jQuery("#cancelBtn").show();
+      }      
+      jQuery.unblockUI(); 
+    }
+    
     jQuery(document).ready(function(){
-      loadScript();
-      
       jQuery("#contactForm").validate({
         rules: {
           contactPhone: {
@@ -185,21 +299,80 @@
             email: true
           }
         },
-        errorClass: "contact-error-msg",
-        submitHandler: function(form) {
+        errorClass: "contact-error-msg"
+      });
+      
+      jQuery("#recaptcha_response_field").on("input", function(){
+        jQuery(".send-err-msg").hide();
+      });
+            
+      jQuery("#continueBtn").click(function(){
+        if( jQuery("#contactForm").valid() ) {
+          showCaptcha();
+          disableEnableContactForm(false);
+          jQuery(".contact-captcha-widget").show();
+          jQuery(".send-msg-div").hide();
+          jQuery(".confirm-div").show();
+        }
+      });
+      
+      jQuery("#cancelBtn").click(function(){
+        disableEnableContactForm(true);
+        jQuery("#contactForm")[0].reset();
+        jQuery(".contact-captcha-widget").hide();
+        jQuery(".send-err-msg").hide();
+        jQuery(".send-msg-div").show();
+        jQuery(".confirm-div").hide();
+      });
+      
+      jQuery("#confirmBtn").click(function(){
+        var respField = jQuery("#recaptcha_response_field");
+        var captchaResp = jQuery(respField).val();
+        if( !captchaResp || jQuery.trim(captchaResp) == "" ) {
+          jQuery(".send-err-msg").html("Please solve the captcha.").show();
+          jQuery(respField).focus();
+        }
+        else {
+          captchaResp = jQuery.trim(captchaResp);
+          var captchaChallenge = jQuery("#recaptcha_challenge_field").val();
+          var contactName = jQuery("#contactName").val();
+          var contactEmail = jQuery("#contactEmail").val();
+          var contactPhone = jQuery("#contactPhone").val();
+          var contactMessage = jQuery("#contactMessage").val();
+          var query = "contactName=" + encodeURIComponent(contactName)
+                      + "&contactEmail=" + encodeURIComponent(contactEmail)
+                      + "&contactPhone=" + encodeURIComponent(contactPhone)
+                      + "&contactMessage=" + encodeURIComponent(contactMessage)
+                      + "&captchaResp=" + encodeURIComponent(captchaResp)
+                      + "&captchaChall=" + encodeURIComponent(captchaChallenge);
+          
+          prePostAction();
+          
+          var unknownErrMsg = "Oops. Something went wrong. Please try again or contact us directly via email.";
           jQuery.ajax({
             url: "/contactus", 
             type: "POST",
-            data: jQuery('#contactForm').serialize(),
-            success: function(msg){
-              alert( "Data Saved: " + msg );
+            data: query,
+            success: function(data){
+              var code = data.code;
+              if( code && code == "1" ) {
+                postPostAction(true, true, "Thank you for your message. We will get back to you as soon as possible.");
+              }
+              else if( code && code == -2 ) {
+                postPostAction(false, false, "Invalid captcha. Please try again or click the reload icon to get another captcha.");
+              }
+              else {
+                postPostAction(true, false, unknownErrMsg);
+              }
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
-              //alert("some error");
+              postPostAction(true, false, unknownErrMsg);
             }
           });
         }
       });
+      
+      loadMapScript();
     });
   </script>
 </html>
