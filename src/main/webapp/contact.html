@@ -285,7 +285,8 @@
         jQuery("#confirmBtn").removeAttr("disabled");
         jQuery("#cancelBtn").show();
       }      
-      jQuery.unblockUI(); 
+      jQuery.unblockUI();
+      jQuery(".blockUI").fadeOut("slow");
     }
     
     jQuery(document).ready(function(){
