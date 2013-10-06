@@ -285,9 +285,12 @@
         jQuery("#confirmBtn").removeAttr("disabled");
         jQuery("#cancelBtn").show();
       }      
+      
+      // jQuery.unblockUI(); not working in IE, thus use this workaround instead.
       //jQuery.unblockUI();
       jQuery(".blockUI").each(function(){
-        jQuery(this).remove();
+        //jQuery(this).remove();
+        jQuery(this).fadeOut("slow");
       });
     }
     
