@@ -136,3 +136,123 @@
 .sent-result-err-msg {
   color: #b94a48;
 }
+
+.product-section {
+  max-width: 850px;
+  height: auto;
+  overflow: auto;
+  min-height: 400px;
+  margin: 10px auto;
+  background-color: #fafafa;
+  border: #ccc 1px dotted;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.grid, .list {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  float: left;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.grid{background: url(/img/grid.png) 50% no-repeat;}
+.grid:hover{background: #7eb800 url(/img/gridw.png) 50% no-repeat;}
+.grid-active{ background: #039fd3 url(/img/gridw.png) 50% no-repeat; }
+
+.list{background:  url(/img/list.png) 50% no-repeat;}
+.list:hover{background: #7eb800 url(/img/listw.png) 50% no-repeat;}
+.list-active{background: #039fd3 url(/img/listw.png) 50% no-repeat;}
+
+.prod-box {
+  max-width: 260px;
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+  margin: 15px;
+  float: left;
+  text-align: center;
+}
+
+.prod-box-list {
+  min-height: 170px;
+  width: auto;
+  margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.prod-box-img-div {
+  text-align: center;
+}
+
+.prod-box-img {
+  max-width:100% !important;
+  height:auto;
+  display:block;
+}
+
+.prod-box-list .prod-box-img-div {
+  padding: 5px 0 0 20px;
+}
+
+.prod-box-list img:first-child {
+  width: 190px;
+  float: left;
+}
+
+.prod-box-title {
+  padding: 5px 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.prod-box-list .prod-box-title {
+  text-decoration: none;
+  float: left;
+  padding: 0 10px;
+  margin: 0 10px;
+  color: #3c2e25;
+  font: italic normal 22px georgia;
+}
+
+.prod-box-price {
+  text-align: left;
+}
+
+.prod-box-list .prod-box-price {
+  text-decoration: none;
+  float: left;
+  padding: 0 10px;
+  margin: 0 10px;
+  color: #3c2e25;
+}
+
+.prod-box-spec {
+  text-align: left;
+}
+
+.prod-box-list .prod-box-spec {
+  min-width: 200px;
+  float: left;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 18px rgba(50, 50, 50, 0.31);
+  -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.31);
+  box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.31);
+}
