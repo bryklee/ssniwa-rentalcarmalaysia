@@ -172,7 +172,7 @@
 .list-active{background: #039fd3 url(/img/listw.png) 50% no-repeat;}
 
 .prod-box {
-  max-width: 260px;
+  max-width: 240px;
   height: auto;
   padding: 10px;
   background-color: #fff;
@@ -245,6 +245,10 @@
   float: left;
   padding: 0 10px;
   margin: 0 10px;
+}
+
+.prod-box-info {
+  float: left;
 }
 
 .clear {

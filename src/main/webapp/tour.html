@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rental Car Malaysia - Tour Package</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container navbar-div-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-div">
+            <a class="navbar-brand" href="/home.html">
+              <img src="/img/rentalcarmalaysia-logo.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div style="margin-left: 15px;">
+            <ul class="nav navbar-nav">
+              <li><a href="/home.html">Home</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/rentalcar.html">Rental Car</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/transportation.html">Transportation</a></li>
+                  <li class="active"><a href="/tour.html">Tour Package</a></li>
+                </ul>
+              </li>
+              <li><a href="/procedure.html">Procedure</a></li>
+              <li><a href="/rules.html">Rules</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="section-top">
+            <div class="title">Tour Package</div>
+            <div>
+              <p>
+                If you are looking for a joyful yet a cheap sightseeing tour, then you have come 
+                to the right place. Please take a look on the following examples of tour package.
+                Most of our customers chose the ready packages, but do not hesitate to ask us
+                for a package customization. Start browse through the list and 
+                <a href="/contact.html">contact us</a> now!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div id="carlist" class="product-section">
+            <div id="grid" class="grid grid-active"></div>
+            <div id="list" class="list"></div>
+            <div class="clear"></div>
+            <div class="prod-box shadow">
+              <div class="prod-box-img-div">
+                <a href="javascript:void()">
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/countrybatu/countrybatu01.jpg" />
+                </a>
+              </div>
+              <div class="prod-box-info">
+                <div class="prod-box-title">Country &#38; Batu Caves</div>
+                <div class="clear"></div>
+                <div class="prod-box-price">
+                  <p>Price: RM60</p>
+                </div>
+              </div>
+            </div>
+            <div class="prod-box shadow">
+              <div class="prod-box-img-div">
+                <a href="javascript:void()">
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/genting/genting01.jpg" />
+                </a>
+              </div>
+              <div class="prod-box-info">
+                <div class="prod-box-title">Genting Highland</div>
+                <div class="clear"></div>
+                <div class="prod-box-price">
+                  <p>Price: RM185</p>
+                </div>
+              </div>
+            </div>
+            <div class="prod-box shadow">
+              <div class="prod-box-img-div">
+                <a href="javascript:void()">
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/penang/penang01.jpg" />
+                </a>
+              </div>
+              <div class="prod-box-info">
+                <div class="prod-box-title">Penang Island</div>
+                <div class="clear"></div>
+                <div class="prod-box-price">
+                  <p>Price: RM190</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="section">
+      <footer>
+        <p>Copyright © 2013 Rental Car Malaysia. All rights reserved.</p>
+      </footer>
+    </div>
+    <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+  <script type="text/javascript">
+    jQuery(function(){ 
+      jQuery("#list").click(function(){    
+        jQuery(".prod-box").animate({opacity:0},function(){
+          jQuery(".grid").removeClass("grid-active");
+          jQuery(".list").addClass("list-active");
+          jQuery(".prod-box").attr("class", "prod-box-list shadow");
+          jQuery(".prod-box-list").stop().animate({opacity:1});
+        });
+      });
+  
+      jQuery("#grid").click(function(){  
+        jQuery(".prod-box-list").animate({opacity:0},function(){
+          jQuery(".list").removeClass("list-active");
+          jQuery(".grid").addClass("grid-active");
+          jQuery(".prod-box-list").attr("class", "prod-box shadow");
+          jQuery(".prod-box").stop().animate({opacity:1});
+        });
+      });
+    });
+  </script>
+</html>
