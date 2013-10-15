@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
     <link href="/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -80,44 +81,95 @@
             <div id="list" class="list"></div>
             <div class="clear"></div>
             <div class="prod-box shadow">
-              <div class="prod-box-img-div">
-                <a href="javascript:void()">
+              <div class="prod-box-img-div tour-gallery">
+                <a title="Show photo gallery" href="javascript:void(0)">
                   <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/countrybatu/countrybatu01.jpg" />
                 </a>
+                <div style="display:none;">
+                  <div class="imgName">countrybatu</div>
+                  <div class="imgCount">15</div>
+                </div>
               </div>
               <div class="prod-box-info">
-                <div class="prod-box-title">Country &#38; Batu Caves</div>
+                <div class="prod-box-title">
+                  <a class="prod-box-title-text" title="Show details" href="javascript:void(0)">
+                    Country &#38; Batu Caves
+                  </a>
+                </div>
                 <div class="clear"></div>
                 <div class="prod-box-price">
                   <p>Price: RM60</p>
                 </div>
-              </div>
-            </div>
-            <div class="prod-box shadow">
-              <div class="prod-box-img-div">
-                <a href="javascript:void()">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/genting/genting01.jpg" />
-                </a>
-              </div>
-              <div class="prod-box-info">
-                <div class="prod-box-title">Genting Highland</div>
                 <div class="clear"></div>
-                <div class="prod-box-price">
-                  <p>Price: RM185</p>
+                <div class="prod-box-details">
+                  <a title="Show photo gallery" href="javascript:void(0)">
+                    <img class="prod-box-details-icon tour-gallery-icon" src="/img/gallery.png" />
+                  </a>
+                  <a title="Show details" href="javascript:void(0)">
+                    <img class="prod-box-details-icon" src="/img/view.png" />
+                  </a>
                 </div>
               </div>
             </div>
             <div class="prod-box shadow">
-              <div class="prod-box-img-div">
-                <a href="javascript:void()">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/penang/penang01.jpg" />
+              <div class="prod-box-img-div tour-gallery">
+                <a title="Show photo gallery" href="javascript:void(0)">
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/genting/genting01.jpg" />
                 </a>
+                <div style="display:none;">
+                  <div class="imgName">genting</div>
+                  <div class="imgCount">15</div>
+                </div>
               </div>
               <div class="prod-box-info">
-                <div class="prod-box-title">Penang Island</div>
+                <div class="prod-box-title">
+                  <a class="prod-box-title-text" title="Show details" href="javascript:void(0)">
+                    Genting Highland
+                  </a>
+                </div>
+                <div class="clear"></div>
+                <div class="prod-box-price">
+                  <p>Price: RM185</p>
+                </div>
+                <div class="clear"></div>
+                <div class="prod-box-details">
+                  <a title="Show photo gallery" href="javascript:void(0)">
+                    <img class="prod-box-details-icon tour-gallery-icon" src="/img/gallery.png" />
+                  </a>
+                  <a title="Show details" href="javascript:void(0)">
+                    <img class="prod-box-details-icon" src="/img/view.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="prod-box shadow">
+              <div class="prod-box-img-div tour-gallery">
+                <a title="Show photo gallery" href="javascript:void(0)">
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/penang/penang01.jpg" />
+                </a>
+                <div style="display:none;">
+                  <div class="imgName">penang</div>
+                  <div class="imgCount">11</div>
+                </div>
+              </div>
+              <div class="prod-box-info">
+                <div class="prod-box-title">
+                  <a class="prod-box-title-text" title="Show details" href="javascript:void(0)">
+                    Penang Island
+                  </a>
+                </div>
                 <div class="clear"></div>
                 <div class="prod-box-price">
                   <p>Price: RM190</p>
+                </div>
+                <div class="clear"></div>
+                <div class="prod-box-details">
+                  <a title="Show photo gallery" href="javascript:void(0)">
+                    <img class="prod-box-details-icon tour-gallery-icon" src="/img/gallery.png" />
+                  </a>
+                  <a title="Show details" href="javascript:void(0)">
+                    <img class="prod-box-details-icon" src="/img/view.png" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -135,10 +187,11 @@
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
-  <script type="text/javascript">
-    jQuery(function(){ 
+  <script type="text/javascript">    
+    jQuery(document).ready(function(){      
       jQuery("#list").click(function(){    
         jQuery(".prod-box").animate({opacity:0},function(){
           jQuery(".grid").removeClass("grid-active");
@@ -155,6 +208,51 @@
           jQuery(".prod-box-list").attr("class", "prod-box shadow");
           jQuery(".prod-box").stop().animate({opacity:1});
         });
+      });
+      
+      jQuery(".tour-gallery, .tour-gallery-icon").click(function() {
+        var prodBoxDiv = jQuery(this).closest("div.shadow");
+        if( !prodBoxDiv.length ) {
+          return;
+        }
+        
+        var hrefArr = new Array();
+        var hrefPrefix = "http://file.rentalcarmalaysia.com.my/tour/";
+        var imgName = jQuery(prodBoxDiv).find(".imgName").text();
+        if( imgName != "" ) {
+          var imgNo, strIndex, hrefUrl;
+          var imgCount = parseInt(jQuery(prodBoxDiv).find(".imgCount").text());
+          for(var i = 0; i < imgCount; i++) {
+            imgNo = i + 1;
+            if( imgNo < 10 ) {
+              strIndex = "0" + imgNo;
+            }
+            else {
+              strIndex = "" + imgNo;
+            }
+            
+            hrefUrl = hrefPrefix + imgName + "/" + imgName + strIndex + ".jpg";
+            hrefArr[i] = {"href": hrefUrl};
+          }
+        }
+        
+        if( hrefArr.length > 0 ) {
+          jQuery.fancybox.open(hrefArr, {
+            openEffect : "elastic",
+            closeEffect : "elastic",
+            prevEffect : "elastic",
+            nextEffect : "elastic",
+            closeBtn  : true,
+            helpers : {
+              title : {
+                type : "inside"
+              }
+            },
+            afterLoad : function() {
+              this.title = "Image " + (this.index + 1) + " of " + this.group.length + (this.title ? " - " + this.title : "");
+            }
+          });
+        }
       });
     });
   </script>

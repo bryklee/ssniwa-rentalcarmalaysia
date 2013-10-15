@@ -428,7 +428,7 @@
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
   <script type="text/javascript">
-    jQuery(function(){ 
+    jQuery(document).ready(function(){
       jQuery("#list").click(function(){    
         jQuery(".prod-box").animate({opacity:0},function(){
           jQuery(".grid").removeClass("grid-active");
