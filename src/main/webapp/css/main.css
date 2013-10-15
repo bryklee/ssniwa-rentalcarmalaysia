@@ -230,7 +230,7 @@
   font: italic normal 22px georgia;
 }
 
-.prod-box-title-text, .prod-box-title-text:hover, .prod-box-title-text:visited, .prod-box-title-text:active {
+.prod-box-title-anchor, .prod-box-title-anchor:hover, .prod-box-title-anchor:visited, .prod-box-title-anchor:active {
   color: #000000;
   text-decoration: none;
 }
@@ -327,4 +327,9 @@
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
+}
+
+.tour-details {
+  display: none;
+  max-width: 600px;
 }
