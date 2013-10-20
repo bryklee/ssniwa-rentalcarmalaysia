@@ -333,3 +333,26 @@
   display: none;
   max-width: 600px;
 }
+
+.tour-details div {
+  padding: 3px;
+}
+
+.tour-details-title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.tour-details-price {
+  font-style: italic;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.tour-details-sec-title {
+  font-weight: bold;
+}
+
+.tour-details td.tour-details-itinerary-col {
+  min-width: 145px;
+}
