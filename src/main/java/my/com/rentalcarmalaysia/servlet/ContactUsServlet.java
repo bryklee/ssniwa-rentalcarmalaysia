@@ -229,6 +229,7 @@ public class ContactUsServlet extends HttpServlet {
         sb.append("<br/>");
         sb.append("<p>");
         sb.append("Sincerely yours,");
+        sb.append("<br/>");
         sb.append("http://www.rentalcarmalaysia.com.my");
         sb.append("</p>");        
         return sb.toString();
