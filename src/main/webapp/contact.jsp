@@ -63,7 +63,7 @@
             </div>
             <div>
               <p>
-                We’d love to hear from you!
+                We&#39;d love to hear from you!
               </p> 
               <p>
                 Trying hard to get the information you are looking for? 

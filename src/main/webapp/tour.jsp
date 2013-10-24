@@ -437,7 +437,7 @@
                   </div>
                   <div>
                     Departure : Daily at 9.00 am<br/>
-                    Pick up : 8.30 - 8.45 am<br/>
+                    Pick up : 8.30 &#45; 8.45 am<br/>
                     Duration : 8 hrs
                   </div>
                 </div>
@@ -508,7 +508,7 @@
                   </div>
                   <div>
                     Departure : Daily at 9.30 am<br/>
-                    Pick up : 9.00 am – 9.15 am<br/>
+                    Pick up : 9.00 am &#45; 9.15 am<br/>
                     Duration : 8 hrs
                   </div>
                 </div>
@@ -554,7 +554,7 @@
                   <div>
                     Experience the best of Kuala Lumpur with a private guide on this full-day tour. 
                     Spend your morning at famous sites including Independence Square, the Petronas 
-                    Twin Towers, the King’s Palace and the National Museum, and enjoy a traditional 
+                    Twin Towers, the King&#39;s Palace and the National Museum, and enjoy a traditional 
                     Malaysian lunch at a local restaurant. Visit Little India, stop by local arts 
                     and crafts centers, and take a guided tour of Batu Caves, a spectacular limestone 
                     outcrop that's must-see while in Kuala Lumpur.
@@ -565,7 +565,7 @@
                       <li>Private 8-hour tour of Kuala Lumpur's must-see attractions</li>
                       <li>
                         Snap photos of Independence Square, the Petronas Twin Towers and the 
-                        King’s Palace
+                        King&#39;s Palace
                       </li>
                       <li>Visit the National Museum, National Monument and National Mosque</li>
                       <li>Explore Little India and spectacular Batu Caves</li>
@@ -630,7 +630,7 @@
                   </div>
                   <div>
                     Departure : Daily at 3.00 pm<br/>
-                    Pick up : 2.30 – 2.45 pm<br/>
+                    Pick up : 2.30 &#45; 2.45 pm<br/>
                     Duration : 8 hrs
                   </div>
                 </div>
@@ -677,7 +677,7 @@
                     * Inclusive of lunch 
                   </div>
                   <div>
-                    Depart Kuala Lumpur for Port Klang in an hour – Malaysia’s busiest port. 
+                    Depart Kuala Lumpur for Port Klang in an hour &#45; Malaysia&#39;s busiest port. 
                     The 30 minute ferry ride offers a panoramic view of the busy harbour and the 
                     mangrove swamps of nearby islands.
                   </div>
@@ -696,7 +696,7 @@
                   </div>
                   <div>
                     Departure : Daily at 9.30 am<br/>
-                    Pick up : 9.15 – 9.30 am<br/>
+                    Pick up : 9.15 &#45; 9.30 am<br/>
                     Duration : 8 hrs
                   </div>
                 </div>
@@ -754,8 +754,8 @@
                     Next, proceed to the Royal Selangor factory where upon arrival, you will be 
                     taken for a tour of the Pewter Gallery. The Gallery offers a host of interactive 
                     displays and fascinating exhibits, aimed at educating and titillating the sense. 
-                    From the Gallery, we continue with the highlight of today’s tour – 
-                    ‘School of Hard Knocks’. Using just a few simple tools 
+                    From the Gallery, we continue with the highlight of today&#39;s tour 
+                    &#34;School of Hard Knocks&#34;. Using just a few simple tools 
                     (hammer, wooden mould, scraper), make a pewter dish personalised with your 
                     initials or message that you wish to engrave onto the dish. Step by step, 
                     the experienced pewtersmith will guide you through the simple processes of forming, 
@@ -765,7 +765,7 @@
                   </div>
                   <div>
                     Departure : Daily at 9.30 am<br/>
-                    Pick up : 8.45 – 9.15 am<br/>
+                    Pick up : 8.45 &#45; 9.15 am<br/>
                     Duration : 4 hrs
                   </div>
                 </div>
@@ -819,13 +819,13 @@
                     Spanning over 80 acres, Sunway Lagoon draws fun seekers from all over with its 
                     reputation as a theme lands, each boasting their own exciting attractions. 
                     There are Adventure Park, Wild Wild West Water Park, Surf Beach and Elephant Walk. 
-                    A place where you will take home more than just memories. The Lagoon’s mascot, 
+                    A place where you will take home more than just memories. The Lagoon&#39;s mascot, 
                     captain quack, walks around the entire Lagoon spreading his contagious energy 
                     and merriment to the visitors, while they enjoy the daily shows and many exciting 
                     activities.
                   </div>
                   <div>
-                    Proceed from departure point for a shopping tour to Malaysia’s very own Leather 
+                    Proceed from departure point for a shopping tour to Malaysia&#39;s very own Leather 
                     and Batik showroom. From here, take a ride to Petronas Twin Tower for photo shop 
                     before proceeding to Sunway Lagoon. Enjoy the many thrilling rides and slides at 
                     Sunway Lagoon at your own leisure
