@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/home.html">
+            <a class="navbar-brand" href="/">
               <img src="/img/rentalcarmalaysia-logo.png"/>
             </a>
           </div>
@@ -36,19 +36,19 @@
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li><a href="/home.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar.html">Rental Car</a></li>
+                  <li><a href="/rentalcar">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation.html">Transportation</a></li>
-                  <li><a href="/tour.html">Tour Package</a></li>
+                  <li><a href="/transportation">Transportation</a></li>
+                  <li><a href="/tour">Tour Package</a></li>
                 </ul>
               </li>
-              <li class="active"><a href="/procedure.html">Procedure</a></li>
-              <li><a href="/rules.html">Rules</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
+              <li class="active"><a href="/procedure">Procedure</a></li>
+              <li><a href="/rules">Rules</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -69,7 +69,7 @@
                 Please follow these 3 simple steps to complete the booking:
               </p>
               <div style="padding-top: 10px;">
-                <a class="btn btn-primary btn-sm show-steps">Show steps »</a>
+                <a class="btn btn-primary btn-sm show-steps">Show steps &#187;</a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
             </ol>
             <p>via any of the following channels:</p>
             <address>
-              <abbr title="Online Form">O:</abbr> <a href="/contact.html">Contact Us</a><br/>
+              <abbr title="Online Form">O:</abbr> <a href="/contact">Contact Us</a><br/>
               <abbr title="Email">E:</abbr> <a href="mailto:ssniwa@gmail.com">ssniwa@gmail.com</a><br/>
               <abbr title="SMS">M:</abbr> <strong>(60) 14-9029687</strong>
             </address>
@@ -139,11 +139,11 @@
             <div>
               <p>
                 We are always happy to serve your call or email enquiry. Please do not hesitate 
-                to <a href="/contact.html">contact us</a>. Price is always negotiable for regular customer.
+                to <a href="/contact">contact us</a>. Price is always negotiable for regular customer.
               </p>
               <p>
                 For those who wish to view the vehicle before pay the booking fees, 
-                please visit us at place as shown in the <a href="/contact.html#locate_us">map</a>.
+                please visit us at place as shown in the <a href="/contact#locate_us">map</a>.
               </p>
             </div>
           </div>
@@ -153,7 +153,7 @@
     <hr/>
     <div class="section">
       <footer>
-        <p>Copyright © 2013 Rental Car Malaysia. All rights reserved.</p>
+        <p>Copyright &#169; 2013 Rental Car Malaysia. All rights reserved.</p>
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>

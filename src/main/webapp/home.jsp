@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/home.html">
+            <a class="navbar-brand" href="/">
               <img src="/img/rentalcarmalaysia-logo.png"/>
             </a>
           </div>
@@ -35,19 +35,19 @@
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/home.html">Home</a></li>
+              <li class="active"><a href="/">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar.html">Rental Car</a></li>
+                  <li><a href="/rentalcar">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation.html">Transportation</a></li>
-                  <li><a href="/tour.html">Tour Package</a></li>
+                  <li><a href="/transportation">Transportation</a></li>
+                  <li><a href="/tour">Tour Package</a></li>
                 </ul>
               </li>
-              <li><a href="/procedure.html">Procedure</a></li>
-              <li><a href="/rules.html">Rules</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/procedure">Procedure</a></li>
+              <li><a href="/rules">Rules</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -82,7 +82,7 @@
               Expect a self-drive tour in Malaysia? Rent the car/van as your wish. 
               Choose from more than 10 types of car model. 
             </p>
-            <p><a class="btn btn-default" href="/rentalcar.html">View details »</a></p>
+            <p><a class="btn btn-default" href="/rentalcar">View details &#187;</a></p>
           </div>
         </div>
         <div class="span4">
@@ -92,7 +92,7 @@
               Hire car/van with driver. We offer transportation from/to KLIA, Genting Highland, 
               Mallaca and many more tourist spots. 
             </p>
-            <p><a class="btn btn-default" href="/transportation.html">View details »</a></p>
+            <p><a class="btn btn-default" href="/transportation">View details &#187;</a></p>
           </div>
         </div>
         <div class="span4">
@@ -102,7 +102,7 @@
               Join our attractive tour packages. You may go with planned package or we are more than
               happy to customize the package as per your wish.
             </p>
-            <p><a class="btn btn-default" href="/tour.html">View details »</a></p>
+            <p><a class="btn btn-default" href="/tour">View details &#187;</a></p>
           </div>          
         </div>  
       </div>
@@ -110,7 +110,7 @@
     <hr>
     <div class="section">
       <footer>
-        <p>Copyright © 2013 Rental Car Malaysia. All rights reserved.</p>
+        <p>Copyright &#169; 2013 Rental Car Malaysia. All rights reserved.</p>
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>

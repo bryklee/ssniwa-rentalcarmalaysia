@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/home.html">
+            <a class="navbar-brand" href="/">
               <img src="/img/rentalcarmalaysia-logo.png"/>
             </a>
           </div>
@@ -36,19 +36,19 @@
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li><a href="/home.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar.html">Rental Car</a></li>
+                  <li><a href="/rentalcar">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li class="active"><a href="/transportation.html">Transportation</a></li>
-                  <li><a href="/tour.html">Tour Package</a></li>
+                  <li class="active"><a href="/transportation">Transportation</a></li>
+                  <li><a href="/tour">Tour Package</a></li>
                 </ul>
               </li>
-              <li><a href="/procedure.html">Procedure</a></li>
-              <li><a href="/rules.html">Rules</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/procedure">Procedure</a></li>
+              <li><a href="/rules">Rules</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -66,7 +66,7 @@
                 Looking for an experience driver to drive you around 
                 Peninsular Malaysia? We offer just more than we can tell here.
                 Please take a look on the transportation price list and 
-                <a href="/contact.html">contact us</a> for more details.
+                <a href="/contact">contact us</a> for more details.
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@
     <hr/>
     <div class="section">
       <footer>
-        <p>Copyright © 2013 Rental Car Malaysia. All rights reserved.</p>
+        <p>Copyright &#169; 2013 Rental Car Malaysia. All rights reserved.</p>
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>

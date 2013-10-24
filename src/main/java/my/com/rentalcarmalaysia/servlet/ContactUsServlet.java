@@ -81,7 +81,6 @@ public class ContactUsServlet extends HttpServlet {
                 contactName, contactEmail, contactPhone, contactMessage) ) {
             return;
         }
-        //session = getMailSession();
         sendAcknowledgementEmail(resp, jsonobj, session, 
                 contactName, contactEmail, contactPhone, contactMessage);
         
@@ -119,7 +118,7 @@ public class ContactUsServlet extends HttpServlet {
             message.setFrom(new InternetAddress("ssniwalee@gmail.com", "SSNiwa Mailer"));
             message.setReplyTo(replyToAdd);
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("bryklee@gmail.com"));
+                    InternetAddress.parse("ssniwa@gmail.com"));
             message.setSubject("[Enquiry] [rentalcarmalaysia.com.my] [Contact Us] - " + contactName);
             message.setContent(
                     getContactUsContent(contactName, contactEmail, contactPhone, contactMessage)

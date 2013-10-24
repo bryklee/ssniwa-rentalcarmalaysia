@@ -9,13 +9,64 @@
     <servlet-name>contactus</servlet-name>
     <servlet-class>my.com.rentalcarmalaysia.servlet.ContactUsServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>rentalcar</servlet-name>
+    <jsp-file>/rentalcar.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>transportation</servlet-name>
+    <jsp-file>/transportation.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>tour</servlet-name>
+    <jsp-file>/tour.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>procedure</servlet-name>
+    <jsp-file>/procedure.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>rules</servlet-name>
+    <jsp-file>/rules.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>contact</servlet-name>
+    <jsp-file>/contact.jsp</jsp-file>
+  </servlet>
+  
   <servlet-mapping>
     <servlet-name>contactus</servlet-name>
     <url-pattern>/contactus</url-pattern>
   </servlet-mapping>
   
+  <servlet-mapping>
+    <servlet-name>rentalcar</servlet-name>
+    <url-pattern>/rentalcar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>transportation</servlet-name>
+    <url-pattern>/transportation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>tour</servlet-name>
+    <url-pattern>/tour</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>procedure</servlet-name>
+    <url-pattern>/procedure</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>rules</servlet-name>
+    <url-pattern>/rules</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>contact</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>
