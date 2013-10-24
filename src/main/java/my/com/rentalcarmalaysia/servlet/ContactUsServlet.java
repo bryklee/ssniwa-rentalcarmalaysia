@@ -81,7 +81,7 @@ public class ContactUsServlet extends HttpServlet {
                 contactName, contactEmail, contactPhone, contactMessage) ) {
             return;
         }
-        session = getMailSession();
+        //session = getMailSession();
         sendAcknowledgementEmail(resp, jsonobj, session, 
                 contactName, contactEmail, contactPhone, contactMessage);
         
@@ -214,15 +214,23 @@ public class ContactUsServlet extends HttpServlet {
         sb.append("Dear " + contactName + ",");
         sb.append("</p>");
         sb.append("<p>");
-        sb.append("Thank you very much for writing to us. This is just an acknowledgement that we " +
-        		"have received your enquiry message below.");
+        sb.append("Thank you very much for writing to us. This is an acknowledgement email indicates " +
+        		"we have received your enquiry message below.");
         sb.append("</p>");
         sb.append("<br/>");
         sb.append(getContactUsContent(contactName, contactEmail, contactPhone, contactMessage));
         sb.append("<br/>");
         sb.append("<p><b>");
-        sb.append("IMPORTANT NOTE: This is an auto generated email. Please DO NOT reply on this email.");
+        sb.append("IMPORTANT NOTE: This is an auto generated email. Please DO NOT reply to this email.");
         sb.append("</b></p>");
+        sb.append("<p><i>");
+        sb.append("* If you are not the intended recipient, please ignore and delete this email.");
+        sb.append("</i></p>");
+        sb.append("<br/>");
+        sb.append("<p>");
+        sb.append("Sincerely yours,");
+        sb.append("http://www.rentalcarmalaysia.com.my");
+        sb.append("</p>");        
         return sb.toString();
     }
 }
