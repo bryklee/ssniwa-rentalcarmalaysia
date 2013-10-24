@@ -53,8 +53,14 @@ public class ContactUsServlet extends HttpServlet {
         String remoteAddr = req.getRemoteAddr() == null ? "" : req.getRemoteAddr().trim();
         String challenge = req.getParameter("captchaChall") == null ? "" : req.getParameter("captchaChall").trim();
         String uresponse = req.getParameter("captchaResp") == null ? "" : req.getParameter("captchaResp").trim();
+        String contactName = req.getParameter("contactName") == null ? "" : req.getParameter("contactName").trim();
+        String contactEmail = req.getParameter("contactEmail") == null ? "" : req.getParameter("contactEmail").trim();
+        String contactMessage = req.getParameter("contactMessage") == null ? "" : req.getParameter("contactMessage").trim();
+        String contactPhone = req.getParameter("contactPhone") == null ? "" : req.getParameter("contactPhone").trim();
+        contactPhone = contactPhone.equals("") ? "-" : contactPhone;
         
-        if( remoteAddr.equals("") || challenge.equals("")) {
+        if( remoteAddr.equals("") || challenge.equals("") || 
+                contactName.equals("") || contactEmail.equals("") || contactMessage.equals("") ) {
             putJsonobj(jsonobj, RESP_FIELD_CODE, RESP_RESULT_ERR_UNKNOWN);
             commitJSONResp(resp, jsonobj);
             return;
@@ -70,9 +76,13 @@ public class ContactUsServlet extends HttpServlet {
             return;
         }
         
-        if( !sendContactUsEmail(req, resp, jsonobj) ) {
+        Session session = getMailSession();
+        if( !sendContactUsEmail(resp, jsonobj, session, 
+                contactName, contactEmail, contactPhone, contactMessage) ) {
             return;
         }
+        sendAcknowledgementEmail(resp, jsonobj, session, 
+                contactName, contactEmail, contactPhone, contactMessage);
         
         putJsonobj(jsonobj, RESP_FIELD_CODE, RESP_RESULT_SUCCESS);
         commitJSONResp(resp, jsonobj);
@@ -92,36 +102,15 @@ public class ContactUsServlet extends HttpServlet {
         return jsonobj.put(key, value);
     }
     
-    private boolean sendContactUsEmail(HttpServletRequest req, HttpServletResponse resp, JSONObject jsonobj) throws IOException {
-        String contactName = req.getParameter("contactName") == null ? "" : req.getParameter("contactName").trim();
-        String contactEmail = req.getParameter("contactEmail") == null ? "" : req.getParameter("contactEmail").trim();
-        String contactPhone = req.getParameter("contactPhone") == null ? "" : req.getParameter("contactPhone").trim();
-        String contactMessage = req.getParameter("contactMessage") == null ? "" : req.getParameter("contactMessage").trim();
-        
-        if( contactEmail.equals("") || contactMessage.equals("")) {
-            putJsonobj(jsonobj, RESP_FIELD_CODE, RESP_RESULT_ERR_UNKNOWN);
-            commitJSONResp(resp, jsonobj);
-            return false;
-        }
-        
-        contactPhone = contactPhone.equals("") ? "-" : contactPhone;
-        
-        Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
-        
+    private boolean sendContactUsEmail(
+            HttpServletResponse resp, 
+            JSONObject jsonobj,
+            Session session,
+            String contactName, 
+            String contactEmail, 
+            String contactPhone, 
+            String contactMessage) throws IOException {        
         try {
-            Session session = Session.getDefaultInstance(props,
-                    new Authenticator() {
-                        protected PasswordAuthentication getPasswordAuthentication() {
-                            return new PasswordAuthentication("ssniwalee@gmail.com", smtp_pwd);
-                        }
-                    }
-            );
-            
             InternetAddress[] replyToAdd = new InternetAddress[1];
             replyToAdd[0] = new InternetAddress(contactEmail, contactName);
             
@@ -130,22 +119,10 @@ public class ContactUsServlet extends HttpServlet {
             message.setReplyTo(replyToAdd);
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("bryklee@gmail.com"));
-            message.setSubject("Enquiry from www.rentalcarmalaysia.com.my contact-us form");
-            
-            StringBuilder sb = new StringBuilder();
-            sb.append("<p><b>Name:</b> ");
-            sb.append(contactName);
-            sb.append("</p>");
-            sb.append("<p><b>Email:</b> ");
-            sb.append(contactEmail);
-            sb.append("</p>");
-            sb.append("<p><b>Phone:</b> ");
-            sb.append(contactPhone);
-            sb.append("</p>");
-            sb.append("<p><b>Message:</b><br/>");
-            sb.append(contactMessage);
-            sb.append("</p>");
-            message.setContent(sb.toString(), "text/html" );
+            message.setSubject("[Enquiry rentalcarmalaysia.com.my][Contact Us] - " + contactName);
+            message.setContent(
+                    getContactUsContent(contactName, contactEmail, contactPhone, contactMessage)
+                    , "text/html" );
     
             Transport.send(message);
         }
@@ -158,4 +135,93 @@ public class ContactUsServlet extends HttpServlet {
         return true;
     }
     
+    private boolean sendAcknowledgementEmail(
+            HttpServletResponse resp, 
+            JSONObject jsonobj,
+            Session session,
+            String contactName, 
+            String contactEmail, 
+            String contactPhone, 
+            String contactMessage) throws IOException {        
+        try {
+            InternetAddress[] replyToAdd = new InternetAddress[1];
+            replyToAdd[0] = new InternetAddress("ssniwa@gmail.com", "SSNiwa");
+            
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress("ssniwalee@gmail.com", "SSNiwa Mailer"));
+            message.setReplyTo(replyToAdd);
+            message.setRecipients(Message.RecipientType.TO,
+                    InternetAddress.parse(contactEmail));
+            message.setSubject("Rental Car Malaysia Acknowledgement - DO NOT REPLY");
+            message.setContent(
+                    getAcknowledgementContent(contactName, contactEmail, contactPhone, contactMessage)
+                    , "text/html" );
+    
+            Transport.send(message);
+        }
+        catch(MessagingException me) {
+            putJsonobj(jsonobj, RESP_FIELD_CODE, RESP_RESULT_ERR_UNKNOWN);
+            commitJSONResp(resp, jsonobj);
+            return false;
+        }
+        
+        return true;
+    }
+    
+    private Session getMailSession() {
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.socketFactory.port", "465");
+        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.port", "465");
+        Session session = Session.getDefaultInstance(props,
+                new Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication("ssniwalee@gmail.com", smtp_pwd);
+                    }
+                }
+        );
+        return session;
+    }
+    
+    private String getContactUsContent(String contactName, String contactEmail, 
+            String contactPhone, String contactMessage) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<p><b>Name:</b> ");
+        sb.append(contactName);
+        sb.append("</p>");
+        sb.append("<p><b>Email:</b> ");
+        sb.append(contactEmail);
+        sb.append("</p>");
+        sb.append("<p><b>Phone:</b> ");
+        sb.append(contactPhone);
+        sb.append("</p>");
+        sb.append("<p><b>Message:</b><br/>");
+        sb.append(contactMessage);
+        sb.append("</p>");
+        return sb.toString();
+    }
+    
+    private String getAcknowledgementContent(
+            String contactName, 
+            String contactEmail, 
+            String contactPhone, 
+            String contactMessage) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<p>");
+        sb.append("Dear " + contactName + ",");
+        sb.append("</p>");
+        sb.append("<p>");
+        sb.append("Thank you very much for writing to us. This is just an acknowledgement that we " +
+        		"have received your enquiry message below.");
+        sb.append("</p>");
+        sb.append("<br/>");
+        sb.append(getContactUsContent(contactName, contactEmail, contactPhone, contactMessage));
+        sb.append("<br/>");
+        sb.append("<p><b>");
+        sb.append("IMPORTANT NOTE: This is an auto generated email. Please DO NOT reply on this email.");
+        sb.append("</b></p>");
+        return sb.toString();
+    }
 }
