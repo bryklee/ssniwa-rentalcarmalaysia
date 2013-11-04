@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/flexslider/flexslider.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -72,6 +73,33 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="slider-banner">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>                     
+                  <a href="/rentalcar">
+                    <img src="/img/home-banner-01.png" alt="">
+                  </a>
+                </li>
+                <li>                     
+                  <a href="/transportation">
+                    <img src="/img/home-banner-02.png" alt="">
+                  </a>
+                </li>
+                <li>                     
+                  <a href="/tour">
+                    <img src="/img/home-banner-03.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <hr>
     <div class="container-fluid">
       <div class="row-fluid">
@@ -116,6 +144,15 @@
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+      jQuery(".flexslider").flexslider({
+        animation: "slide",
+        slideshowSpeed: 4500 
+      });
+    });
+  </script>
 </html>

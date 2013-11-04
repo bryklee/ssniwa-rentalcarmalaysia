@@ -356,3 +356,15 @@
 .tour-details td.tour-details-itinerary-col {
   min-width: 145px;
 }
+
+.slider-banner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.slider-banner .flexslider {
+  -webkit-box-shadow: 0 0;
+  -moz-box-shadow: 0 0;
+  -o-box-shadow: 0 0;
+  box-shadow: 0 0;
+}
