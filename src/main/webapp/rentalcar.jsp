@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="At Rental Car Malaysia, we offer a wide range of car models to ensure that your car rental is convenient and enjoyable. Find out more about rental car list here."/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rental Car Malaysia - Rental Car Service</title>
+    <title>Rental Car Service, Rent a Car in Penang, Rental Car Malaysia</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -16,6 +15,17 @@
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46057417-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,27 +37,28 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/">
-              <img src="/img/rentalcarmalaysia-logo.png"/>
+            <a class="navbar-brand" href="/" title="Home">
+              <img src="/img/rentalcarmalaysia-logo.png" alt="Rental Car Malaysia Logo" />
             </a>
           </div>
         </div>
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
+              <li><a href="/" title="Home">Home</a></li>
               <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Services">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li class="active"><a href="/rentalcar">Rental Car</a></li>
+                  <li class="active"><a href="/rentalcar" title="Rental Car">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation">Transportation</a></li>
-                  <li><a href="/tour">Tour Package</a></li>
+                  <li><a href="/transportation" title="Transportation">Transportation</a></li>
+                  <li><a href="/tour" title="Tour Package">Tour Package</a></li>
                 </ul>
               </li>
-              <li><a href="/procedure">Procedure</a></li>
-              <li><a href="/rules">Rules</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/procedure" title="Procedure">Procedure</a></li>
+              <li><a href="/rules" title="Rules &#38; Regulations">Rules</a></li>
+              <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+              <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -63,7 +74,7 @@
             <div>
               <p>
                 We offer a wide range of car models to ensure that your car rental is convenient 
-                and enjoyable. Find out more about the details from the <a href="rentalcar#carlist">rental car list</a>. 
+                and enjoyable. Find out more about the details from the <a href="rentalcar#carlist" title="Rental Car List">rental car list</a>. 
               </p>
               <p>
                 Here are few things we would like to highlight to you:
@@ -117,7 +128,7 @@
               </ol>
               <p>
                 All the prices are depends on vehicles and time of transfer,
-                <a href="/contact">contact us</a> for further details
+                <a href="/contact" title="Contact Us">contact us</a> for further details
               </p>
             </div>
           </div>
@@ -134,7 +145,7 @@
             <div class="clear"></div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/viva_elite1.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/viva_elite1.jpg" alt="Produa Viva Elite 1.0" />
               </div>
               <div class="prod-box-title">Produa Viva Elite 1.0</div>
               <div class="prod-box-price">
@@ -153,7 +164,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_inspira_2_0.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_inspira_2_0.jpg" alt="Proton Inspira 2.0" />
               </div>
               <div class="prod-box-title">Proton Inspira 2.0</div>
               <div class="prod-box-price">
@@ -173,7 +184,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Honda_Civic_2_0_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Honda_Civic_2_0_Auto.jpg" alt="Honda Civic 2.0" />
               </div>
               <div class="prod-box-title">Honda Civic 2.0</div>
               <div class="prod-box-price">
@@ -194,7 +205,7 @@
             <div class="clear"></div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Naza_Ria_2_4_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Naza_Ria_2_4_Auto.jpg" alt="Naza Ria 2.4" />
               </div>
               <div class="prod-box-title">Naza Ria 2.4</div>
               <div class="prod-box-price">
@@ -214,7 +225,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Waja_1_6_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Waja_1_6_Auto.jpg" alt="Proton Waja 1.6" />
               </div>
               <div class="prod-box-title">Proton Waja 1.6</div>
               <div class="prod-box-price">
@@ -233,7 +244,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Persona_1_6_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Persona_1_6_Auto.jpg" alt="Proton Persona 1.6" />
               </div>
               <div class="prod-box-title">Proton Persona 1.6</div>
               <div class="prod-box-price">
@@ -254,7 +265,7 @@
             <div class="clear"></div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Wira_1_5_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Wira_1_5_Auto.jpg" alt="Proton Wira 1.5" />
               </div>
               <div class="prod-box-title">Proton Wira 1.5</div>
               <div class="prod-box-price">
@@ -273,7 +284,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Naza_Citra_2_0_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Naza_Citra_2_0_Auto.jpg" alt="Naza Citra 2.0" />
               </div>
               <div class="prod-box-title">Naza Citra 2.0</div>
               <div class="prod-box-price">
@@ -292,7 +303,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Exora_2_0_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Proton_Exora_2_0_Auto.jpg" alt="Proton Exora 2.0" />
               </div>
               <div class="prod-box-title">Proton Exora 2.0</div>
               <div class="prod-box-price">
@@ -313,7 +324,7 @@
             <div class="clear"></div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Toyota_Alphard_3_0_Auto.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Toyota_Alphard_3_0_Auto.jpg" alt="Toyota Alphard 3.0" />
               </div>
               <div class="prod-box-title">Toyota Alphard 3.0</div>
               <div class="prod-box-price">
@@ -332,7 +343,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Kia_Pregio_2_0_Manual.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Kia_Pregio_2_0_Manual.jpg" alt="Van Kia Pregio 2.0" />
               </div>
               <div class="prod-box-title">Van Kia Pregio 2.0</div>
               <div class="prod-box-price">
@@ -351,7 +362,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Nissan_Urvan_3_0 _Manual.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Nissan_Urvan_3_0 _Manual.jpg" alt="Van Nissan Urvan 3.0" />
               </div>
               <div class="prod-box-title">Van Nissan Urvan 3.0</div>
               <div class="prod-box-price">
@@ -373,7 +384,7 @@
             <div class="clear"></div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Toyota_Hieace_2_5_Manual.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Van_Toyota_Hieace_2_5_Manual.jpg" alt="Van Toyota Hieace 2.5" />
               </div>
               <div class="prod-box-title">Van Toyota Hieace 2.5</div>
               <div class="prod-box-price">
@@ -394,7 +405,7 @@
             </div>
             <div class="prod-box shadow">
               <div class="prod-box-img-div">
-                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Era_Komuter_Turbo_2_5_Manual.jpg" />
+                <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/car/Era_Komuter_Turbo_2_5_Manual.jpg" alt="Era Komuter Turbo 2.5" />
               </div>
               <div class="prod-box-title">Era Komuter Turbo 2.5</div>
               <div class="prod-box-price">

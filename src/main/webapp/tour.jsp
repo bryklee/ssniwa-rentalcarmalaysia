@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="If you are looking for a joyful yet a cheap sightseeing tour, then you have come to the right place. Please take a look on the following examples of tour package."/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rental Car Malaysia - Tour Package</title>
+    <title>Tour Package, KL Day Tour, Kuala Lumpur Tour, Rental Car Malaysia</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,6 +16,17 @@
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46057417-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,27 +38,28 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/">
-              <img src="/img/rentalcarmalaysia-logo.png"/>
+            <a class="navbar-brand" href="/" title="Home">
+              <img src="/img/rentalcarmalaysia-logo.png" alt="Rental Car Malaysia Logo" />
             </a>
           </div>
         </div>
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
+              <li><a href="/" title="Home">Home</a></li>
               <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Services">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar">Rental Car</a></li>
+                  <li><a href="/rentalcar" title="Rental Car">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation">Transportation</a></li>
-                  <li class="active"><a href="/tour">Tour Package</a></li>
+                  <li><a href="/transportation" title="Transportation">Transportation</a></li>
+                  <li class="active"><a href="/tour" title="Tour Package">Tour Package</a></li>
                 </ul>
               </li>
-              <li><a href="/procedure">Procedure</a></li>
-              <li><a href="/rules">Rules</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/procedure" title="Procedure">Procedure</a></li>
+              <li><a href="/rules" title="Rules &#38; Regulations">Rules</a></li>
+              <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+              <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -65,7 +76,7 @@
                 to the right place. Please take a look on the following examples of tour package.
                 Most of our customers chose the ready packages, but do not hesitate to ask us
                 for a package customization. Start browse through the list and 
-                <a href="/contact">contact us</a> now!
+                <a href="/contact" title="Contact Us">contact us</a> now!
               </p>
             </div>
           </div>
@@ -83,7 +94,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/countrybatu/countrybatu01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/countrybatu/countrybatu01.jpg" alt="Batu Caves and Contry" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">countrybatu</div>
@@ -136,7 +147,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/genting/genting01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/genting/genting01.jpg" alt="Genting Highland" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">genting</div>
@@ -194,7 +205,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/penang/penang01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/penang/penang01.jpg" alt="Penang Island" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">penang</div>
@@ -293,7 +304,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/bkttinggigenting/bkttinggigenting01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/bkttinggigenting/bkttinggigenting01.jpg" alt="Genting View, Bukit Tinggi and Genting Highland" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">bkttinggigenting</div>
@@ -387,7 +398,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/malacca/malacca01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/malacca/malacca01.jpg" alt="Malacca" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">malacca</div>
@@ -446,7 +457,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/elephantsanctuary/elephantsanctuary01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/elephantsanctuary/elephantsanctuary01.jpg" alt="Elephant Sanctuary" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">elephantsanctuary</div>
@@ -518,7 +529,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/klcity/klcity01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/klcity/klcity01.jpg" alt="KL City" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">klcity</div>
@@ -579,7 +590,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/kualaselangor/kualaselangor01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/kualaselangor/kualaselangor01.jpg" alt="Kuala Selangor" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">kualaselangor</div>
@@ -639,7 +650,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/ketam/ketam01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/ketam/ketam01.jpg" alt="Pulau Ketam (Crab Island)" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">ketam</div>
@@ -706,7 +717,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/nationalzoo/nationalzoo01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/nationalzoo/nationalzoo01.jpg" alt="National Zoo and School of Hard Knock" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">nationalzoo</div>
@@ -774,7 +785,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/sunwaylagoon/sunwaylagoon01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/sunwaylagoon/sunwaylagoon01.jpg" alt="Sunway Lagoon" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">sunwaylagoon</div>
@@ -836,7 +847,7 @@
             <div class="prod-box shadow">
               <div class="prod-box-img-div tour-gallery">
                 <a title="Show photo gallery" href="javascript:void(0)">
-                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/putrajaya/putrajaya01.jpg" />
+                  <img class="prod-box-img" src="http://file.rentalcarmalaysia.com.my/tour/putrajaya/putrajaya01.jpg" alt="Putrajaya" />
                 </a>
                 <div style="display:none;">
                   <div class="imgName">putrajaya</div>

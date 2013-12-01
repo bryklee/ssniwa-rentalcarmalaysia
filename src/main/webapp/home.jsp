@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="As a leader in car rental service provider in Kuala Lumpur, Malaysia, we offer van rental, car rental, transportation and limousine service for tour and travel at Kuala Lumpur."/>
+    <meta name="msvalidate.01" content="EB22267051DC1153046FDFB2E8FB8E4F" />
+    <meta name="google-site-verification" content="TiXX-FbnqlmcXYgio8PZDdU4O1iQi3sK5vPHi5k4918" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rental Car Malaysia - Home</title>
+    <title>Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,6 +18,17 @@
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46057417-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,27 +40,28 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/">
-              <img src="/img/rentalcarmalaysia-logo.png"/>
+            <a class="navbar-brand" href="/" title="Home">
+              <img src="/img/rentalcarmalaysia-logo.png" alt="Rental Car Malaysia Logo" />
             </a>
           </div>
         </div>
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
+              <li class="active"><a href="/" title="Home">Home</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Services">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar">Rental Car</a></li>
+                  <li><a href="/rentalcar" title="Rental Car">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation">Transportation</a></li>
-                  <li><a href="/tour">Tour Package</a></li>
+                  <li><a href="/transportation" title="Transportation">Transportation</a></li>
+                  <li><a href="/tour" title="Tour Package">Tour Package</a></li>
                 </ul>
               </li>
-              <li><a href="/procedure">Procedure</a></li>
-              <li><a href="/rules">Rules</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/procedure" title="Procedure">Procedure</a></li>
+              <li><a href="/rules" title="Rules &#38; Regulations">Rules</a></li>
+              <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+              <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -80,18 +93,18 @@
             <div class="flexslider">
               <ul class="slides">
                 <li>                     
-                  <a href="/rentalcar">
-                    <img src="/img/home-banner-01.png" alt="">
+                  <a href="/rentalcar" title="Rental Car">
+                    <img src="/img/home-banner-01.png" alt="Rental Car Malaysia Welcome Banner">
                   </a>
                 </li>
                 <li>                     
-                  <a href="/transportation">
-                    <img src="/img/home-banner-02.png" alt="">
+                  <a href="/transportation" title="Transportation">
+                    <img src="/img/home-banner-02.png" alt="Rental Car Malaysia Trasportation Service">
                   </a>
                 </li>
                 <li>                     
-                  <a href="/tour">
-                    <img src="/img/home-banner-03.png" alt="">
+                  <a href="/tour" title="Tour Package">
+                    <img src="/img/home-banner-03.png" alt="Rental Car Malaysia Tour Package">
                   </a>
                 </li>
               </ul>
@@ -110,7 +123,7 @@
               Expect a self-drive tour in Malaysia? Rent the car/van as your wish. 
               Choose from more than 10 types of car model. 
             </p>
-            <p><a class="btn btn-default" href="/rentalcar">View details &#187;</a></p>
+            <p><a class="btn btn-default" href="/rentalcar" title="Rental Car">View details &#187;</a></p>
           </div>
         </div>
         <div class="span4">
@@ -120,7 +133,7 @@
               Hire car/van with driver. We offer transportation from/to KLIA, Genting Highland, 
               Mallaca and many more tourist spots. 
             </p>
-            <p><a class="btn btn-default" href="/transportation">View details &#187;</a></p>
+            <p><a class="btn btn-default" href="/transportation" title="Transportation">View details &#187;</a></p>
           </div>
         </div>
         <div class="span4">
@@ -130,7 +143,7 @@
               Join our attractive tour packages. You may go with planned package or we are more than
               happy to customize the package as per your wish.
             </p>
-            <p><a class="btn btn-default" href="/tour">View details &#187;</a></p>
+            <p><a class="btn btn-default" href="/tour" title="Tour Package">View details &#187;</a></p>
           </div>          
         </div>  
       </div>

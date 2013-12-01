@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="As a leader in car rental service provider in Kuala Lumpur, Malaysia, Rental Car Malaysia offers budget car rental and van rental at an affordable price."/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rental Car Malaysia - Rental Procedure</title>
+    <title>Rental Procedure, Budget Car Rental, Van Rental in Kuala Lumpur, Malaysia</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,6 +16,17 @@
       <script src="/js/html5shiv.js"></script>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46057417-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,27 +38,28 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-div">
-            <a class="navbar-brand" href="/">
-              <img src="/img/rentalcarmalaysia-logo.png"/>
+            <a class="navbar-brand" href="/" title="Home">
+              <img src="/img/rentalcarmalaysia-logo.png" alt="Rental Car Malaysia Logo" />
             </a>
           </div>
         </div>
         <div class="navbar-collapse collapse">
           <div style="margin-left: 15px;">
             <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
+              <li><a href="/" title="Home">Home</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Services">Services <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rentalcar">Rental Car</a></li>
+                  <li><a href="/rentalcar" title="Rental Car">Rental Car</a></li>
                   <li class="divider"></li>
-                  <li><a href="/transportation">Transportation</a></li>
-                  <li><a href="/tour">Tour Package</a></li>
+                  <li><a href="/transportation" title="Transportation">Transportation</a></li>
+                  <li><a href="/tour" title="Tour Package">Tour Package</a></li>
                 </ul>
               </li>
-              <li class="active"><a href="/procedure">Procedure</a></li>
-              <li><a href="/rules">Rules</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li class="active"><a href="/procedure" title="Procedure">Procedure</a></li>
+              <li><a href="/rules" title="Rules &#38; Regulations">Rules</a></li>
+              <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+              <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
             </ul>
           </div>
         </div><!--/.navbar-collapse -->
@@ -69,7 +80,7 @@
                 Please follow these 3 simple steps to complete the booking:
               </p>
               <div style="padding-top: 10px;">
-                <a class="btn btn-primary btn-sm show-steps">Show steps &#187;</a>
+                <a class="btn btn-primary btn-sm show-steps" title="Show rental procedure steps">Show steps &#187;</a>
               </div>
             </div>
           </div>
@@ -94,8 +105,8 @@
             </ol>
             <p>via any of the following channels:</p>
             <address>
-              <abbr title="Online Form">O:</abbr> <a href="/contact">Contact Us</a><br/>
-              <abbr title="Email">E:</abbr> <a href="mailto:ssniwa@gmail.com">ssniwa@gmail.com</a><br/>
+              <abbr title="Online Form">O:</abbr> <a href="/contact" title="Contact Us">Contact Us</a><br/>
+              <abbr title="Email">E:</abbr> <a href="mailto:ssniwa@gmail.com" title="Email">ssniwa@gmail.com</a><br/>
               <abbr title="SMS">M:</abbr> <strong>(60) 14-9029687</strong>
             </address>
           </div>
