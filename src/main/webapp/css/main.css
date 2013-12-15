@@ -384,9 +384,9 @@
 
 /* outer wrapper */
 #share-wrapper {
-  margin-top: 200px;
+  margin-top: 230px;
   position:fixed;
-  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -400,15 +400,15 @@
 /* the list */
 #share-wrapper li.button-wrap {
   background: #E4EFF0;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 10px 0px 0px;
   display: block;
   width: 140px;
-  margin: 0px 0px 1px -110px;
+  margin: 0px -110px 1px 0px;
 }
 
 /* share link */
 #share-wrapper li.button-wrap > a {
-  padding-right: 60px;
+  padding-left: 60px;
   height: 32px;
   display: block;
   line-height: 32px;
@@ -421,25 +421,13 @@
 
 /* background image for each link */
 #share-wrapper .facebook > a{
-  background: url(/img/facebook.jpg) no-repeat right;
+  background: url(/img/facebook.jpg) no-repeat;
 }
 #share-wrapper .twitter > a{
-  background: url(/img/twitter.jpg) no-repeat right;
-}
-#share-wrapper .digg > a{
-  background: url(/img/digg.jpg) no-repeat right;
-}
-.stumbleupon > a{
-  background: url(/img/stumbleupon.jpg) no-repeat right;
-}
-#share-wrapper .delicious > a{
-  background: url(/img/delicious.jpg) no-repeat right;
+  background: url(/img/twitter.jpg) no-repeat;
 }
 #share-wrapper .google > a{
-  background: url(/img/google.jpg) no-repeat right;
-}
-#share-wrapper .email > a{
-  background: url(/img/email.jpg) no-repeat right;
+  background: url(/img/google.jpg) no-repeat;
 }
 
 /* small screen */
@@ -481,3 +469,21 @@
 }
 
 /* END Social Media buttons */
+
+/* Social Media icons on top right */
+.discount-share {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}
+
+.discount-share .discount-share-fb {
+  position: absolute; 
+  margin: 2px 0 0 -150px;
+}
+
+.discount-share .discount-share-gplus {
+  position: absolute; 
+  margin: 2px 0 0 -65px;
+}
+/* END Social Media icons on top right */

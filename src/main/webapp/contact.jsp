@@ -36,6 +36,7 @@
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
     <div id="share-wrapper">
       <ul class="share-inner-wrp">
         <!-- Facebook -->
@@ -87,6 +88,14 @@
           </div>
         </div><!--/.navbar-collapse -->
       </div>
+      <div class="discount-share">
+        <div class="discount-share-fb">
+          <div class="fb-like" data-href="http://www.rentalcarmalaysia.com.my" data-layout="button_count" data-action="like" data-show-faces="true"></div>
+        </div>
+        <div class="discount-share-gplus">
+          <div class="g-plusone" data-href="http://www.rentalcarmalaysia.com.my" data-size="medium"></div>
+        </div>
+      </div>
     </div>
     <div class="container-fluid">
       <div class="row-fluid contact-section-top">
@@ -103,6 +112,11 @@
                 Trying hard to get the information you are looking for? 
                 Having any doubts or comments, or just simply a suggestion? 
                 Please write us via the form underneath and speak up!
+              </p>
+            </div>
+            <div>
+              <p>
+                Share us on Facebook/Google+ and tweet us now to get additional discount.
               </p>
             </div>
           </div>

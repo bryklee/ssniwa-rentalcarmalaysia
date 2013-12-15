@@ -38,6 +38,7 @@
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
     <div id="share-wrapper">
       <ul class="share-inner-wrp">
         <!-- Facebook -->
@@ -89,7 +90,15 @@
           </div>
         </div><!--/.navbar-collapse -->
       </div>
-    </div>
+      <div class="discount-share">
+        <div class="discount-share-fb">
+          <div class="fb-like" data-href="http://www.rentalcarmalaysia.com.my" data-layout="button_count" data-action="like" data-show-faces="true"></div>
+        </div>
+        <div class="discount-share-gplus">
+          <div class="g-plusone" data-href="http://www.rentalcarmalaysia.com.my" data-size="medium"></div>
+        </div>
+      </div>
+    </div>    
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
@@ -103,6 +112,11 @@
                 Located in Setapak, the heart of the Kuala Lumpur city. 
                 We have various types of van and car to be hired. Looking for renting a car/van? 
                 Drop us a phone call or email for booking.
+              </p>
+            </div>
+            <div>
+              <p>
+                Share us on Facebook/Google+ and tweet us now to get additional discount.
               </p>
             </div>
           </div>
@@ -191,4 +205,5 @@
       });
     });
   </script>
+  <!-- Place this tag after the last +1 button tag. -->
 </html>
