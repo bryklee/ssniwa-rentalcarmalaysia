@@ -2,11 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="As a leader in car rental service provider in Kuala Lumpur, Malaysia, we offer van rental, car rental, transportation and limousine service for tour and travel at Kuala Lumpur."/>
     <meta name="msvalidate.01" content="EB22267051DC1153046FDFB2E8FB8E4F" />
     <meta name="google-site-verification" content="TiXX-FbnqlmcXYgio8PZDdU4O1iQi3sK5vPHi5k4918" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur" />
+    <meta name="description" content="As a leader in car rental service provider in Kuala Lumpur, Malaysia, we offer van rental, car rental, transportation and limousine service for tour and travel at Kuala Lumpur."/>
+    <meta name="keywords" content="rental car, car rental, rental van, van rental, tour, travel, transportation, limousine, hire driver, Kuala Lumpur, Malaysia" />
+    <meta property="og:title" content="Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur" />
+    <meta property="og:description" content="As a leader in car rental service provider in Kuala Lumpur, Malaysia, we offer van rental, car rental, transportation and limousine service for tour and travel at Kuala Lumpur." />
+    <meta property="og:url" content="http://www.rentalcarmalaysia.com.my" />
+    <meta property="og:image" content="http://www.rentalcarmalaysia.com.my/img/home-banner-01.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <title>Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
@@ -30,6 +38,22 @@
     </script>
   </head>
   <body>
+    <div id="share-wrapper">
+      <ul class="share-inner-wrp">
+        <!-- Facebook -->
+        <li class="facebook button-wrap">
+          <a href="javascript:void(0)" title="Share this on Facebook">Facebook</a>
+        </li>
+        <!-- Google -->
+        <li class="google button-wrap">
+          <a href="javascript:void(0)" title="Share this on Google+">Google+</a>
+        </li>
+        <!-- Twitter -->
+        <li class="twitter button-wrap">
+          <a href="javascript:void(0)" title="Tweet this page">Twitter</a>
+        </li>
+      </ul>
+    </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container navbar-div-container">
         <div class="navbar-header">
@@ -148,9 +172,9 @@
       </div>
     </div>
     <hr>
-    <div class="section">
+    <div class="section-footer">
       <footer>
-        <p>Copyright &#169; 2013 Rental Car Malaysia. All rights reserved.</p>
+        <p>Copyright &#169; 2014 Rental Car Malaysia. All rights reserved.</p>
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>

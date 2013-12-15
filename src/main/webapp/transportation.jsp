@@ -2,9 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Want to hire car or van with driver in Kuala Lumpur, Malaysia? At Rental Car Malaysia, we offer transportation from/to KLIA, Malacca and many more tourist spots."/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Transportation Service in Kuala Lumpur, Rental Car Malaysia" />
+    <meta name="description" content="Want to hire car or van with driver in Kuala Lumpur, Malaysia? At Rental Car Malaysia, we offer transportation from/to KLIA, Malacca and many more tourist spots."/>
+    <meta name="keywords" content="transportation, limousine, hire driver, airport transport, KLIA, Kuala Lumpur, Malaysia" />
+    <meta property="og:title" content="Transportation Service in Kuala Lumpur, Rental Car Malaysia" />
+    <meta property="og:description" content="Want to hire car or van with driver in Kuala Lumpur, Malaysia? At Rental Car Malaysia, we offer transportation from/to KLIA, Malacca and many more tourist spots." />
+    <meta property="og:url" content="http://www.rentalcarmalaysia.com.my/transportation" />
+    <meta property="og:image" content="http://www.rentalcarmalaysia.com.my/img/home-banner-02.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <title>Transportation Service in Kuala Lumpur, Rental Car Malaysia</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">    
@@ -28,6 +36,22 @@
     </script>
   </head>
   <body>
+    <div id="share-wrapper">
+      <ul class="share-inner-wrp">
+        <!-- Facebook -->
+        <li class="facebook button-wrap">
+          <a href="javascript:void(0)" title="Share this on Facebook">Facebook</a>
+        </li>
+        <!-- Google -->
+        <li class="google button-wrap">
+          <a href="javascript:void(0)" title="Share this on Google+">Google+</a>
+        </li>
+        <!-- Twitter -->
+        <li class="twitter button-wrap">
+          <a href="javascript:void(0)" title="Tweet this page">Twitter</a>
+        </li>
+      </ul>
+    </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container navbar-div-container">
         <div class="navbar-header">
@@ -252,9 +276,9 @@
       </div>
     </div>
     <hr/>
-    <div class="section">
+    <div class="section-footer">
       <footer>
-        <p>Copyright &#169; 2013 Rental Car Malaysia. All rights reserved.</p>
+        <p>Copyright &#169; 2014 Rental Car Malaysia. All rights reserved.</p>
       </footer>
     </div>
     <div id="scroll-to-top"><img src="/img/gototop.png"/></div>
