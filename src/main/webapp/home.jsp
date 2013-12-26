@@ -14,6 +14,8 @@
     <meta property="og:url" content="http://www.rentalcarmalaysia.com.my" />
     <meta property="og:image" content="http://www.rentalcarmalaysia.com.my/img/home-banner-01.png" />
     <meta property="og:type" content="website" />
+    <meta property="fb:admins" content="shogi_6@yahoo.com"/>
+    <meta property="fb:admins" content="bryklee@gmail.com"/>
     <meta name="twitter:card" content="summary" />
     <title>Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur</title>
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -186,6 +188,16 @@
       </div>
     </div>
     <hr>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="section-comments">
+            <div class="fb-comments" data-href="http://www.rentalcarmalaysia.com.my" data-numposts="10" data-colorscheme="light"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="section-footer">
       <footer>
         <p>Copyright &#169; 2014 Rental Car Malaysia. All rights reserved.</p>
@@ -197,6 +209,15 @@
     <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <script type="text/javascript">
     jQuery(document).ready(function(){
       jQuery(".flexslider").flexslider({

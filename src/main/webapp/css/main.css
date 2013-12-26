@@ -487,3 +487,21 @@
   margin: 2px 0 0 -65px;
 }
 /* END Social Media icons on top right */
+
+/* Comments */
+.section-comments {
+  margin: 20px 0 0 30px;
+  width: 600px;
+}
+
+@media all and (max-width: 650px) {
+  .section-comments {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  
+  .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
+  }
+}
+/* END Comments */
