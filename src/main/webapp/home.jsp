@@ -14,7 +14,7 @@
     <meta property="og:url" content="http://www.rentalcarmalaysia.com.my" />
     <meta property="og:image" content="http://www.rentalcarmalaysia.com.my/img/home-banner-01.png" />
     <meta property="og:type" content="website" />
-    <meta property="fb:admins" content="bryklee@gmail.com"/>
+    <meta property="fb:admins" content="788769957"/>
     <meta name="twitter:card" content="summary" />
     <title>Rental Car Companies Malaysia, Budget Car Rental, Car Hire Kuala Lumpur</title>
     <link rel="shortcut icon" href="/favicon.ico" />
