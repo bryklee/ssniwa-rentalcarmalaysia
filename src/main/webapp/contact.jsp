@@ -246,6 +246,12 @@
               <abbr title="Mobile">M:</abbr> <strong>(60) 14-9029687</strong><br/>
               <abbr title="Email">E:</abbr> <a href="mailto:ssniwa@gmail.com" title="Email">ssniwa@gmail.com</a><br/>
             </address>
+            <div class="container-col-title">Connect with us</div>
+            <div style="margin: -5px 0 20px 0;">
+              <a href="https://www.facebook.com/SsNiwaTravelTour" target="_blank" title="Connect us on Facebook">
+                <img width="24px" height="24px" src="/img/facebook.jpg" />
+              </a>
+            </div>
           </div>
         </div>
         <div id="locate_us" class="span5">
