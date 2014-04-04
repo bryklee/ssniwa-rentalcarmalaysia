@@ -114,11 +114,12 @@ public class ContactUsServlet extends HttpServlet {
             InternetAddress[] replyToAdd = new InternetAddress[1];
             replyToAdd[0] = new InternetAddress(contactEmail, contactName);
             
+            InternetAddress[] recipientsAdd = {new InternetAddress("ssniwa@gmail.com"), new InternetAddress("shogiaru@gmail.com")};
+            
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("ssniwalee@gmail.com", "SSNiwa Mailer"));
             message.setReplyTo(replyToAdd);
-            message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("ssniwa@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, recipientsAdd);
             message.setSubject("[Enquiry] [rentalcarmalaysia.com.my] [Contact Us] - " + contactName);
             message.setContent(
                     getContactUsContent(contactName, contactEmail, contactPhone, contactMessage)
